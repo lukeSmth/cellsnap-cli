@@ -17,6 +17,12 @@
 # # `cellsnap-cli` demo
 #
 # The `.py` file is the git tracked half of the jupytext pair. The `.ipynb` is published to a cellsnap artifact branch.
+#
+# **Staying in sync:**
+#
+# `cellsnap-cli` compares this script's cells against the notebook's before publishing. Edit one
+# without re-syncing the other and the artifact is reported as `drift:` and carried forward
+# unchanged rather than being published.
 
 # %%
 import matplotlib.pyplot as plt
@@ -35,10 +41,3 @@ ax.set(xlabel="time (s)", ylabel="voltage (mV)")
 ax.grid()
 
 plt.show()
-
-# %% [markdown]
-# ## Staying in sync
-#
-# `cellsnap-cli` compares this script's cells against the notebook's before publishing. Edit one
-# without re-syncing the other and the artifact is reported as `drift:` and carried forward
-# unchanged rather than being published.
