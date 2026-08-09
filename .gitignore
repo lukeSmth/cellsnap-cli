@@ -1,0 +1,16 @@
+build/
+dist/
+__pycache__/
+*.egg-info
+.venv/
+
+*.pyc
+.ipynb_checkpoints/
+.ruff_cache
+.DS_Store
+
+_scratch/
+
+# Jupytext: track the paired .py sources only; .ipynb is regenerated locally
+# and published to the artifact branch
+*.ipynb
